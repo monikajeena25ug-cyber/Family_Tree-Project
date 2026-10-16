@@ -22,17 +22,5 @@ Person* create_person(const char *name, int age){
     member ->father = NULL;
     member->mother = NULL;
 
-
-    printf("Person Details (Dynamically Allocated):\n");
-    printf("Person's name: %s\n", member->name);
-    printf("Person's age: %d\n", member->age);
-    printf("Allocated memory is: %p",member);
-    
     return member;
-}
-
-int main(){
-Person *member = create_person("Monika",18);
-free(member);
-return 0;
 }
